@@ -185,9 +185,11 @@ export default {
               }
             }
             for (var i = 0; i < n[ii]; i++) {
-              var ran = Math.floor(Math.random() * (typeresults.length - i));
-              exams.push(typeresults[ran]);
-              typeresults[ran] = typeresults[typeresults.length - i - 1];
+              if(typeresults.length - i > 0){
+                var ran = Math.floor(Math.random() * (typeresults.length - i));
+                exams.push(typeresults[ran]);
+                typeresults[ran] = typeresults[typeresults.length - i - 1];
+              }
             }
           }
           that.exams = exams;
