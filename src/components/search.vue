@@ -108,7 +108,6 @@
 
 <script>
 var AV = require("leancloud-storage");
-var { Query, User } = AV;
 var APP_ID = "ziVcuQrAswDwlQOAv22MBrqT-9Nh9j0Va";
 var APP_KEY = "HIvBh4J7tt3kbVbd9dnTJwBd";
 
