@@ -117,8 +117,8 @@ AV.init({
 });
 export default {
   data: () => ({
-    unit: [2],
-    unitvalue: [2],
+    unit: [2, 7],
+    unitvalue: [2, 7],
     type: [
       { value: 1, text: "选择题" },
       { value: 2, text: "填空题" },
