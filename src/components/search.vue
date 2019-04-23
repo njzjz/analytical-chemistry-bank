@@ -86,7 +86,7 @@
               <img :src="item.question||item.get('question')" class="scale7">
             </div>
             <br v-show="showanswer">
-            <img :src="item.answer||item.get('answer')" class="scale7" v-show="showanswer">
+            <img :src="item.answer||item.get('answer')" :class="item.get('type')==4?'scale7':'scale5'" v-show="showanswer">
           </v-container>
         </v-card>
       </v-flex>
@@ -99,7 +99,7 @@
             <img :src="item.question||item.get('question')" class="scale7">
           </div>
           <br v-show="showanswer">
-          <img :src="item.answer||item.get('answer')" class="scale7" v-show="showanswer">
+          <img :src="item.answer||item.get('answer')" :class="item.get('type')==4?'scale7':'scale5'" v-show="showanswer">
         </v-flex>
       </div>
     </v-card>
@@ -208,6 +208,10 @@ export default {
 </script>
 
 <style>
+.scale5 {
+  zoom: 0.5;
+  vertical-align: text-top;
+}
 .scale7 {
   zoom: 0.5;
   vertical-align: text-top;
