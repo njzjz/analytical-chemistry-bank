@@ -93,14 +93,19 @@
     </v-container>
     <v-card v-if="exams">
       <div id="print">
-        <v-flex v-for="(item, index) in exams" v-bind:key="index">
-          <div>
-            <span>{{index+1}}.</span>
-            <img :src="item.question||item.get('question')" class="scale7">
-          </div>
-          <br v-show="showanswer">
-          <img :src="item.answer||item.get('answer')" :class="item.get('type')==4?'scale7':'scale5'" v-show="showanswer">
-        </v-flex>
+        <v-container v-for="(exam, ii) in exams">
+          <v-flex>
+            <strong>{{number[ii]}}、{{type[ii].text}}</strong>
+          </v-flex>
+          <v-flex v-for="(item, index) in exam" v-bind:key="index">
+            <div>
+              <span>{{index+1}}.</span>
+              <img :src="item.question||item.get('question')" :class="item.get('type')==4?'scale7':'scale5'" alt="question">
+            </div>
+            <br v-show="showanswer">
+            <img :src="item.answer||item.get('answer')" :class="item.get('type')==4?'scale7':'scale5'" v-show="showanswer" alt="answer">
+          </v-flex>
+        </v-container>
       </div>
     </v-card>
   </v-container>
@@ -137,7 +142,8 @@ export default {
     exams: [],
     showanswer: false,
     panel: [true, false],
-    n: [10, 10, 2, 4]
+    n: [10, 10, 2, 4],
+    number: ["一", "二", "三", "四"]
   }),
   created: function () {
     this.items = this.$storage.get("items", [])
@@ -178,6 +184,7 @@ export default {
           for (var ii in n) {
             var typeresults = [];
             var j = 0;
+            exams[ii] = [];
             for (var i in results) {
               if (results[i].get("type") == that.type[ii].value) {
                 typeresults[j++] = results[i];
@@ -186,7 +193,7 @@ export default {
             for (var i = 0; i < n[ii]; i++) {
               if(typeresults.length - i > 0){
                 var ran = Math.floor(Math.random() * (typeresults.length - i));
-                exams.push(typeresults[ran]);
+                exams[ii].push(typeresults[ran]);
                 typeresults[ran] = typeresults[typeresults.length - i - 1];
               }
             }
