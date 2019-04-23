@@ -127,10 +127,10 @@ export default {
     ],
     typevalue: [1, 2, 3, 4],
     difficult: [
-      { value: 1, text: "天堂" },
-      { value: 2, text: "简单" },
-      { value: 3, text: "困难" },
-      { value: 4, text: "地狱" }
+      { value: 1, text: "简单" },
+      { value: 2, text: "普通" },
+      { value: 3, text: "难" },
+      { value: 4, text: "很难" }
     ],
     difficultvalue: [1, 2, 3, 4],
     items: [],
