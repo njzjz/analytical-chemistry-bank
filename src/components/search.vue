@@ -83,10 +83,10 @@
           <v-container>
             <div>
               <span>{{index+1}}.</span>
-              <img :src="item.question||item.get('question')" class="scale7">
+              <img :src="item.question||item.get('question')" :class="(item.type||item.get('type'))==4?'scale7':'scale5'" alt="question">
             </div>
             <br v-show="showanswer">
-            <img :src="item.answer||item.get('answer')" :class="item.get('type')==4?'scale7':'scale5'" v-show="showanswer">
+            <img :src="item.answer||item.get('answer')" :class="(item.type||item.get('type'))==4?'scale7':'scale5'" v-show="showanswer" alt="answer">
           </v-container>
         </v-card>
       </v-flex>
@@ -100,10 +100,10 @@
           <v-flex v-for="(item, index) in exam" v-bind:key="index">
             <div>
               <span>{{index+1}}.</span>
-              <img :src="item.question||item.get('question')" :class="item.get('type')==4?'scale7':'scale5'" alt="question">
+              <img :src="item.question||item.get('question')" :class="(item.type||item.get('type'))==4?'scale7':'scale5'" alt="question">
             </div>
             <br v-show="showanswer">
-            <img :src="item.answer||item.get('answer')" :class="item.get('type')==4?'scale7':'scale5'" v-show="showanswer" alt="answer">
+            <img :src="item.answer||item.get('answer')" :class="(item.type||item.get('type'))==4?'scale7':'scale5'" v-show="showanswer" alt="answer">
           </v-flex>
         </v-container>
       </div>
