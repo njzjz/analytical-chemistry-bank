@@ -1,7 +1,6 @@
 {
   "name": "analytical-chemistry-bank",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -9,7 +8,8 @@
     "capacitor-copy": "vue-cli-service capacitor-copy",
     "capacitor-init": "vue-cli-service capacitor-init",
     "capacitor-open": "vue-cli-service capacitor-open",
-    "capacitor-update": "vue-cli-service capacitor-update"
+    "capacitor-update": "vue-cli-service capacitor-update",
+    "now-build": "yarn build"
   },
   "dependencies": {
     "@capacitor/cli": "1.0.0-beta.19",
