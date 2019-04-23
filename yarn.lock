@@ -898,10 +898,10 @@
     eslint "^4.19.1"
     eslint-plugin-vue "^4.7.1"
 
-"@vue/cli-plugin-pwa@^3.6.0":
+"@vue/cli-plugin-pwa@3.6.0":
   version "3.6.0"
-  resolved "https://registry.npm.taobao.org/@vue/cli-plugin-pwa/download/@vue/cli-plugin-pwa-3.6.0.tgz#4c09b03227ed4db7d9441602dfd9a149f4629920"
-  integrity sha1-TAmwMiftTbfZRBYC39mhSfRimSA=
+  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-pwa/-/cli-plugin-pwa-3.6.0.tgz#4c09b03227ed4db7d9441602dfd9a149f4629920"
+  integrity sha512-SlbzvD64kUxt1XT02LxDpxYr3B7Uqu4LClrmRvvqMTRJO4WMAbbgRQY9ZuinnVUEfAKexqjjP3kz3xId4wy1OQ==
   dependencies:
     "@vue/cli-shared-utils" "^3.6.0"
     webpack ">=4 < 4.29"
@@ -7210,10 +7210,10 @@ regexpu-core@^4.5.4:
     unicode-match-property-ecmascript "^1.0.4"
     unicode-match-property-value-ecmascript "^1.1.0"
 
-register-service-worker@^1.6.2:
+register-service-worker@1.6.2:
   version "1.6.2"
-  resolved "https://registry.npm.taobao.org/register-service-worker/download/register-service-worker-1.6.2.tgz#9297e54c205c371c6e49bfa88f6997e8dd315f4c"
-  integrity sha1-kpflTCBcNxxuSb+oj2mX6N0xX0w=
+  resolved "https://registry.yarnpkg.com/register-service-worker/-/register-service-worker-1.6.2.tgz#9297e54c205c371c6e49bfa88f6997e8dd315f4c"
+  integrity sha512-I8L87fX2TK29LDx+wgyOUh2BJ3rDIRC1FtRZEHeP3rivzDv6p1DDZLGGtPucqjEkm45+2crtFIFssEWv56+9Wg==
 
 regjsgen@^0.2.0:
   version "0.2.0"
