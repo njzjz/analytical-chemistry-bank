@@ -9,8 +9,14 @@
     "capacitor-init": "vue-cli-service capacitor-init",
     "capacitor-open": "vue-cli-service capacitor-open",
     "capacitor-update": "vue-cli-service capacitor-update",
-    "now-build": "yarn build"
+    "electron:build": "vue-cli-service electron:build",
+	"electron:build-windows": "vue-cli-service electron:build --windows",
+    "electron:serve": "vue-cli-service electron:serve",
+    "now-build": "yarn build",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps"
   },
+  "main": "background.js",
   "dependencies": {
     "@capacitor/cli": "1.0.0-beta.19",
     "@capacitor/core": "1.0.0-beta.19",
@@ -27,10 +33,12 @@
     "@vue/cli-plugin-pwa": "^3.6.0",
     "@vue/cli-service": "3.6.0",
     "babel-eslint": "10.0.1",
+    "electron": "^4.0.0",
     "eslint": "5.16.0",
     "eslint-plugin-vue": "5.2.2",
     "stylus": "0.54.5",
     "stylus-loader": "3.0.2",
+    "vue-cli-plugin-electron-builder": "^1.2.0",
     "vue-cli-plugin-vuetify": "0.5.0",
     "vue-template-compiler": "2.6.10",
     "vuetify-loader": "1.2.2"
