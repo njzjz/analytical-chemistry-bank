@@ -220,7 +220,7 @@ export default {
   vertical-align: text-top;
 }
 .scale7 {
-  zoom: 0.5;
+  zoom: 0.7;
   vertical-align: text-top;
 }
 </style>
