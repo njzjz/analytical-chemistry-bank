@@ -18,7 +18,7 @@
     "leancloud-storage": "3.13.1",
     "register-service-worker": "1.6.2",
     "vue": "2.6.10",
-    "vue2-storage": "4.0.3",
+    "vue2-storage": "4.0.5",
     "vuetify": "1.5.14"
   },
   "devDependencies": {
