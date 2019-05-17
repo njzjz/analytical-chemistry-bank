@@ -12,8 +12,8 @@
     "now-build": "yarn build"
   },
   "dependencies": {
-    "@capacitor/cli": "1.0.0-beta.24",
-    "@capacitor/core": "1.0.0-beta.24",
+    "@capacitor/cli": "1.0.0-beta.25",
+    "@capacitor/core": "1.0.0-beta.25",
     "core-js": "2.6.5",
     "leancloud-storage": "3.13.2",
     "register-service-worker": "1.6.2",
