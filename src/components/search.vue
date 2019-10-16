@@ -93,7 +93,7 @@
     </v-container>
     <v-card v-if="exams">
       <div id="print">
-        <v-container v-for="(exam, ii) in exams">
+        <v-container v-for="(exam, ii) in exams" v-bind:key="ii">
           <v-flex>
             <strong>{{number[ii]}}、{{type[ii].text}}</strong>
           </v-flex>
@@ -166,7 +166,7 @@ export default {
           that.items = results;
           that.$storage.set("items", results);
         },
-        function(error) {}
+        function(error) {console.log(error);}
       );
     },
     exam: function(unitvalue, n, difficultvalue) {
@@ -190,7 +190,7 @@ export default {
                 typeresults[j++] = results[i];
               }
             }
-            for (var i = 0; i < n[ii]; i++) {
+            for (i = 0; i < n[ii]; i++) {
               if(typeresults.length - i > 0){
                 var ran = Math.floor(Math.random() * (typeresults.length - i));
                 exams[ii].push(typeresults[ran]);
@@ -201,7 +201,7 @@ export default {
           that.exams = exams;
           that.$storage.set("exams", exams);
         },
-        function(error) {}
+        function(error) {console.log(error);}
       );
     },
     print: function() {
