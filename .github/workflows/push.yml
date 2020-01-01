@@ -18,4 +18,4 @@ jobs:
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: master
-        FOLDER: public
+        FOLDER: dist
