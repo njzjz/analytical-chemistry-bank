@@ -9,7 +9,9 @@
     "capacitor-init": "vue-cli-service capacitor-init",
     "capacitor-open": "vue-cli-service capacitor-open",
     "capacitor-update": "vue-cli-service capacitor-update",
-    "now-build": "yarn build"
+    "now-build": "yarn build",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "dependencies": {
     "@capacitor/cli": "2.0.2",
@@ -19,7 +21,8 @@
     "register-service-worker": "1.7.1",
     "vue": "2.6.11",
     "vue2-storage": "5.0.0",
-    "vuetify": "1.5.24"
+    "vuetify": "1.5.24",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "4.3.1",
@@ -58,5 +61,6 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "snyk": true
 }
