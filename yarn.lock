@@ -905,10 +905,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@capacitor/cli@2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@capacitor/cli/-/cli-2.1.1.tgz#bedc85f930bc77906cb84dd467fe6b264d4b52fb"
-  integrity sha512-LlZl/gCjPD4M5rjON3zsTkdcrZfN4VUnY7EAiv3oZ2PBO0RdGTGC+z5LL9g4iRpMUrqrYiG8IHnH/5Oz4XcWKg==
+"@capacitor/cli@2.1.2":
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/@capacitor/cli/-/cli-2.1.2.tgz#d4354308e5912728815d88cabfca2c6b3212cbc5"
+  integrity sha512-xxkkEKCjQAVvFO5UwnBqAMQ/UcmTQfKAVPBGIqTxT20sqPVxqMq4INGJyB+qu+6pbe7KwZKywBS7/zFMw+Ngtg==
   dependencies:
     chalk "^2.3.0"
     commander "^2.12.2"
@@ -922,10 +922,10 @@
     which "^1.3.0"
     xml2js "^0.4.19"
 
-"@capacitor/core@2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@capacitor/core/-/core-2.1.1.tgz#93cbe1cb9ea779a369b6648a68aab86019455848"
-  integrity sha512-BJwBJ8TycicCMzFFAUNJ2bkjT0QO5+kWapTvqDOqceLD2wNSP37bLtrohWKV/BkKpLclOxzp4cMlCm9VIlh5yA==
+"@capacitor/core@2.1.2":
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/@capacitor/core/-/core-2.1.2.tgz#d710b2a873f8c9ba1184a67f6c27bdb2a3a0a4af"
+  integrity sha512-oi+n23h9cJ/yaeMIlrnoeCV5p7pv2XWdT+cXzwh9j72LV+Y/oSGcNgFWGEAR/B1UVlv6LnLLQSs9CUXhNlh+Nw==
   dependencies:
     tslib "^1.9.0"
 
