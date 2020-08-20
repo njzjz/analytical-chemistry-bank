@@ -17,7 +17,7 @@
     "core-js": "3.6.5",
     "leancloud-storage": "3.15.0",
     "register-service-worker": "1.7.1",
-    "vue": "2.6.11",
+    "vue": "2.6.12",
     "vue2-storage": "5.0.0",
     "vuetify": "1.5.24"
   },
@@ -32,7 +32,7 @@
     "stylus": "0.54.8",
     "stylus-loader": "3.0.2",
     "vue-cli-plugin-vuetify": "2.0.7",
-    "vue-template-compiler": "2.6.11",
+    "vue-template-compiler": "2.6.12",
     "vuetify-loader": "1.6.0"
   },
   "eslintConfig": {
